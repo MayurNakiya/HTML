@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+
+        <form action="" method="post">
+    <table cellspacing="20">
+
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+
+        <tr>
+            <td>Name:</td>
+            <td> <input type="text" pattern="[a-zA-Z]{3,6}" title="3 to 6 characters only...!" required> </td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td> <input type="text" pattern="[a-z0-9._\-]+@[a-z0-9.\-]+\.[a-z]{2,4}]" required> </td>
+        </tr>
+
+        <tr>
+            <td>Password: </td>
+            <td> <input type="password" required> </td>
+        </tr>
+
+        <tr>
+            <td>Confirm Password: </td>
+            <td> <input type="password" required> </td>
+        </tr>
+
+        <tr>
+            <td>Select Country: </td>
+            <td>
+                <select name="" id="">
+                    <option hidden>---Select your Country---</option>
+                    <option>India</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Birth Date:</td>
+            <td> <input type="date" required> </td>
+            </tr>
+
+            <tr>
+                <td>Gender: </td>
+                <td> <input type="radio" name="A">Male 
+                    <input type="radio" name="A">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date Time:</td>
+                <td>
+                    <input type="datetime-local" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Language</td>
+                <td>
+                    <input type="checkbox">English
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Gujrati
+                </td>
+            </tr>
+    
+        <tr>
+            <td>Address:</td>
+            <td>
+                <textarea name="" id="" cols="22" rows="3" required></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mobile No.:</td>
+            <td>
+                <input type="text"  pattern="[0-9]{10}" title="10 digits only...!" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Upload Image:</td>
+            <td>
+                <input type="file" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" style="text-align: center;" >
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </td>
+        </tr>
+        
+    </table>
+</form>
+</center>
+</body>
+</html>
